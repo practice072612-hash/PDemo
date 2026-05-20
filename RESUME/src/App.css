@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f3f4f6;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: white;
+  padding: 80px 20px 140px;
+  position: relative;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 28px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* UPLOAD CARD */
+.upload-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: -70px auto 60px;
+  background: white;
+  border-radius: 30px;
+  padding: 70px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+.upload-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  color: #111827;
+}
+
+.upload-card h2 {
+  font-size: 48px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.subtext {
+  font-size: 24px;
+  color: #6b7280;
+  margin-bottom: 35px;
+}
+
+/* FILE BUTTON */
+.file-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0f172a;
+  color: white;
+  padding: 18px 34px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.file-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.file-name {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* GENERATE BUTTON */
+.generate-btn {
+  display: block;
+  margin: 35px auto 0;
+  padding: 18px 42px;
+  border: none;
+  border-radius: 14px;
+  background: #3b82f6;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.generate-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px 120px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .upload-card {
+    width: 92%;
+    padding: 40px 20px;
+  }
+
+  .upload-card h2 {
+    font-size: 32px;
+  }
+
+  .subtext {
+    font-size: 18px;
+  }
+
+  .file-btn,
+  .generate-btn {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+}
